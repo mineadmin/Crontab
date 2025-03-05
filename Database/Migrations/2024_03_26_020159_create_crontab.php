@@ -35,7 +35,7 @@ class CreateCrontab extends Migration
             $table->tinyInteger('is_singleton')->default(0);
             $table->string('memo', 60)->default(null);
             $table->string('type', 10);
-            $table->string('rule', 10);
+            $table->string('rule', 30);
             $table->text('value');
             $table->datetimes();
         });
